@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     // handle the result of the edit activity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        // super.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == EDIT_TEXT_CODE) {
             // Retrieve the updated text value
             String itemText = data.getStringExtra(KEY_ITEM_TEXT);
